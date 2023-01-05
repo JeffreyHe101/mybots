@@ -1,0 +1,2 @@
+# mybots
+repository for Ludobots

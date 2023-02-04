@@ -9,7 +9,7 @@ New Creature was based off of previous quadruped, however, the right leg was tak
 
 Fitness Function: The lowest z value possible, or the robot trying to get as low as possible in height during each trial.
 
-Video: Youtube link
+Video: https://youtu.be/kmg4JGV7Dc4
 
 Resources:
 Pyrosim: https://github.com/jbongard/pyrosim

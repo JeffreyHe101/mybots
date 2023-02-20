@@ -4,10 +4,12 @@ Jeffrey He
 
 Run main.py to start the code.
 
-Assignment 7:
+Assignment 7
+
+
 Body/Brain Generation:
-PIC
-DESCRIPTION
+
+![My Image](diagram_linkjoint.png)
 
 Body generation:
 A random amount of links gets generated between 5-15.

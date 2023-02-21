@@ -32,7 +32,7 @@ The weights for the sensors and motors are chosen at random as well.
 The creature fills 3d space by having the option to produce multiple links off the same link instead of one link per link. The limbs protrude into free space and anti-collision detection is recorded through having each links' relative position and making sure it doesn't collide.
 Most of the work done is in solution, with most lines commented what they are trying to do.
 
-Video: vid
+Video: https://youtu.be/vguGKMnsJik
 
 Resources:
 Pyrosim: https://github.com/jbongard/pyrosim

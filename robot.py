@@ -8,13 +8,15 @@ import constants as c
 class ROBOT:
     def __init__(self, solutionID):
        # self.solutionID = solutionID
-        self.robotId = p.loadURDF("body.urdf")  
+        self.robotId = p.loadURDF("body" + solutionID + ".urdf")  
         self.nn = NEURAL_NETWORK("brain" + solutionID + ".nndf")
         #print(solutionID)
         del_string = "brain" + solutionID + ".nndf"
+        del_string2 = "body" + solutionID + ".urdf"
        # print(del_string)
       #  os.system("py del " + del_string)
         os.remove(del_string)
+        os.remove(del_string2)
 
     def Prepare_To_Sense(self):
         self.sensors = dict()
@@ -55,7 +57,7 @@ class ROBOT:
 
     def Get_Fitness(self, solutionID):
         basePositionAndOrientation = p.getBasePositionAndOrientation(self.robotId)
-        print(basePositionAndOrientation)
+        #print(basePositionAndOrientation)
         basePosition = basePositionAndOrientation[0]
         xCoordinateOfLinkZero = basePosition[0]
         #stateOfLinkZero = p.getLinkState(self.robotId,0)    

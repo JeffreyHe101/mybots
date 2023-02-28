@@ -9,7 +9,7 @@ Assignment 8
 
 Body/Brain Generation:
 
-![My Image](diagram_linkjoint.png)
+
 
 Body generation:
 A random amount of links gets generated between 5-15.

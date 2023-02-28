@@ -7,8 +7,8 @@ Run main.py to start the code.
 Assignment 8
 
 
-Body/Brain Generation:
-
+Body/Brain Generation and Mutation:
+![My Image](diagram_linkjoint.png)
 
 
 Body generation:

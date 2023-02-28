@@ -13,6 +13,14 @@ Body/Brain Generation and Mutation:
 ![My Image](diagram_fitness.png)
 
 
+Fitness Diagram:
+A population size of 5 was chosen with number of generations of 150. The fitness level is denoted by the +x position given. The higher the better, and the kept children are the ones that go further in the +x direction.
+
+Mutation:
+50% chance to change a sensor motor for a new child.
+50% chance to add a link on the outside of the current robot for a new child.
+The fitness of child and parent are compared, larger is kept for future iterations.
+
 Body generation:
 A random amount of links gets generated between 5-15.
 Each link can is randomly chosen to be a sensor with a 50% probability.

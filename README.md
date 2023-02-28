@@ -8,9 +8,9 @@ Assignment 8
 
 
 Body/Brain Generation and Mutation:
-![My Image](diagram_linkjoint.png)
+![My Image](diagram_a8.png)
 
-
+![My Image](diagram_fitness.png)
 Body generation:
 A random amount of links gets generated between 5-15.
 Each link can is randomly chosen to be a sensor with a 50% probability.

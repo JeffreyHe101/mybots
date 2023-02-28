@@ -1,10 +1,10 @@
 # mybots
-repository for Ludobots Assignment 7
+repository for Ludobots Assignment 8
 Jeffrey He
 
 Run main.py to start the code.
 
-Assignment 7
+Assignment 8
 
 
 Body/Brain Generation:

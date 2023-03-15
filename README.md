@@ -1,21 +1,44 @@
-# mybots
+# Running Code
 repository for Ludobots Assignment 8
 Jeffrey He
 
-Run main.py to start the code.
+Download all the files, and run main.py
+At the command line: python3 main.py
 
-Assignment 8
+# Videos
 
+Short video: LINK
 
-Body/Brain Generation and Mutation:
+2 minute video: LINK
+
+# Methods
+The simulation works through parallel hill climbing. Multiple robots are being modified simultaneously through creation, mutation, and selection. The image below shows a detailed version of robot creation.
+
+ROBOT CREATION
 
 ![My Image](diagram_a8.png)
 
+ROBOT CREATION DESCRIPTION
 
-![My Image](diagram_fitness.png)
+After creation, each robot undergoes a mutation at each generation shown in the image below.
 
+MUTATION PICTURE
 
+MUTATION DESCRIPTION
 
+After mutation, the robot gets compared to its predecessor through selection and evolution shown below.
+
+SELECTION PICTURE
+
+SELECTION DESCRIPTION
+
+# CODE OVERVIEW
+
+code description
+
+# Results
+
+Results description
 
 Fitness Diagram:
 A population size of 5 was chosen with number of generations of 150. The fitness level is denoted by the +x position given. The higher the better, and the kept children are the ones that go further in the +x direction.
@@ -48,6 +71,6 @@ Most of the work done is in solution, with most lines commented what they are tr
 
 Video: https://www.youtube.com/watch?v=TimpiIt_j5c
 
-Resources:
+# Resources:
 Pyrosim: https://github.com/jbongard/pyrosim
 Ludobots: https://reddit.com/r/ludobots

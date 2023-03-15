@@ -36,42 +36,26 @@ In order for robots to change, there must be a criteria to compare in performanc
 
 # CODE OVERVIEW
 
-code description
+The code runs from main.py which directly calls search.py. In search.py an instance of parallel hill climbing is initiated using the constants in constants.py. This parallel hill climbing evolves with the initiated parents over a certain number of generations. The end result is displaying the best robot along with a graph of fitness of each parent. 
+
+The parents are stored through dictionaries of link information, joint information, size information, and many more. There are more dictionaries used to record instances of available link spaces on the robot as well as storing the relative position of each robot. To speed up simulations, the hard coded dimensions of the robot are not stored, but instead the relative space they are stored. This works for almost every case except when very small and very large blocks are near each other which is limited given the size constraints given. 
+
+Simulation.py and simulate.py work with the robot and the data. The robot data is passed to robot.py which gives more commands to motor.py and sensor.py. When the simulation is done, robot.py gives the fitness data which gets stored in parallelhillclimber for future evolutions. The robot fills 3d space by giving the option to produce multiple links off the same link instead of one link per face.
+
+To make modifications, mainly change populationsize and number of generations in constants.py. The fitness plot of 10 random seeds was conducted by recording the most fit parent from 1 run of 10x500, and then graphing all 10 best parents over 50,000 simulations.
 
 # Results
 
-Results description
+Below is the fitness diagram of the 10 best parents per seed.
+
+![My Image](diagram_fitness_final.png)
 
 Fitness Diagram:
-A population size of 5 was chosen with number of generations of 150. The fitness level is denoted by the +x position given. The higher the better, and the kept children are the ones that go further in the +x direction.
+10 random seeds were ran with 10 parents over 500 generations. the best seed for each parent was recorded and a fitness plot was reran with the 10 best parents over 50,000 simulations.
 
-Mutation:
-50% chance to change a sensor motor for a new child.
-50% chance to add a link on the outside of the current robot for a new child.
-The fitness of child and parent are compared, larger is kept for future iterations.
+On an overall scale, the results of my phc was somewhat disappointing. The robot failed to move extrememly far from the origin given the circumstances. There was visible growth over the larger amount of iterations, however, it was never at the point where it was running away. This can mainly be attributed to the minimal mutation procedures. Only deleting a link and modifying a sensor weight was available, as adding a link was not implemented at the moment. Given more time, further reserach would be done in seeing how drastic of an increase in fitness could be obtained by having the opportunity to add a new link to the outside of the robot.
 
-Body generation:
-A random amount of links gets generated between 5-15.
-Each link can is randomly chosen to be a sensor with a 50% probability.
-Each link has its x,y,z dimensions stored in a dictionary randomly between 0.2 and 1.2.
-
-For each new link, it creates a joint between a randomly selected old link. Then a randomly selected available face is selected on that link.
-
-The code checks if there is a possible face for the link, and then collision detection is run so that the new link does not exist in the same space as an old link.
-
-When creating a new link and joint, previous link information is used to create the new joint position in joint_maker and the code iterates over every new link and then end pyrosim.
-
-
-Brain Generation:
-Use stored variables to create sensors for the appropriate links, and generate motors off the list of joints created in body generation.
-
-The weights for the sensors and motors are chosen at random as well.
-
-
-The creature fills 3d space by having the option to produce multiple links off the same link instead of one link per link. The limbs protrude into free space and anti-collision detection is recorded through having each links' relative position and making sure it doesn't collide.
-Most of the work done is in solution, with most lines commented what they are trying to do.
-
-Video: https://www.youtube.com/watch?v=TimpiIt_j5c
+Bodies somewhat reduced in size when examined, however, it would never go below 4 or 5 as those evolutions tended to be negative towards fitness. It seems after the first 100 generations, the robots got stuck over very long periods of time. This may be due to having already tried removing all the outside links available that give larger fitness changes being committed. When comparing early robots to their later counterparts, a majority of the time the only changes were the sensor weights.
 
 # Resources:
 Pyrosim: https://github.com/jbongard/pyrosim

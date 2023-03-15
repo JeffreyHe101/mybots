@@ -1,5 +1,5 @@
 # Running Code
-repository for Ludobots Assignment 8
+repository for Ludobots FINAL PROJECT
 Jeffrey He
 
 Download all the files, and run main.py

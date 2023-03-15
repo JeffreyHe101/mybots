@@ -44,6 +44,8 @@ Simulation.py and simulate.py work with the robot and the data. The robot data i
 
 To make modifications, mainly change populationsize and number of generations in constants.py. The fitness plot of 10 random seeds was conducted by recording the most fit parent from 1 run of 10x500, and then graphing all 10 best parents over 50,000 simulations.
 
+My hwi is the same as other people's simulate, I just followed a different naming convention while going through ludobots tutorials, but the content should be the same.
+
 # Results
 
 Below is the fitness diagram of the 10 best parents per seed.

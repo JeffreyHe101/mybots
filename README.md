@@ -30,9 +30,9 @@ There are two possible mutations: either deleting an existing link, or changing 
 
 After mutation, the robot gets compared to its predecessor through selection and evolution shown below. 
 
-SELECTION PICTURE
+![My Image](Selection_diagram.png)
 
-SELECTION DESCRIPTION
+In order for robots to change, there must be a criteria to compare in performance. This is called fitness. When a parent robot mutates and has a child robot, the fitness is compared between the two to see which is better. If the child is better, the parent gets replaced with the child robot. If the child is worse, the parent does not get replcaed and remains the same. The fitness of my robots is how far the robot moves in the x direction in around 10 seconds. Over many iterations and evolutions, the final parent robot may be very different from its initial robot.
 
 # CODE OVERVIEW
 

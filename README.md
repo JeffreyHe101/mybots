@@ -24,11 +24,11 @@ For the brain, these are generated from mapping sensors to motors. Each sensor h
 
 After creation, each robot undergoes a mutation at each generation shown in the image below.
 
-MUTATION PICTURE
+![My Image](Mutate_diagram.png)
 
-MUTATION DESCRIPTION
+There are two possible mutations: either deleting an existing link, or changing a weight. Deleting a link removes an outside link and the joint attached to it. These only apply to the very outside link otherwise the robot breaks down. Changing the weight is done by changing a certain weight randomly in the array.
 
-After mutation, the robot gets compared to its predecessor through selection and evolution shown below.
+After mutation, the robot gets compared to its predecessor through selection and evolution shown below. 
 
 SELECTION PICTURE
 

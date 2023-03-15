@@ -16,7 +16,7 @@ The simulation works through parallel hill climbing. Multiple robots are being m
 
 ROBOT CREATION
 
-![My Image](diagram_a8.png)
+![My Image](create_brain_body_diagram.png)
 
 ROBOT CREATION DESCRIPTION
 

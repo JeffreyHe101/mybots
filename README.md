@@ -7,9 +7,9 @@ At the command line: python3 main.py
 
 # Videos
 
-Short video: LINK
+Short video: https://youtu.be/s92Cf5lF_S4
 
-2 minute video: LINK
+2 minute video: https://youtu.be/qfYji7_WTo0
 
 # Methods
 The simulation works through parallel hill climbing. Multiple robots are being modified simultaneously through creation, mutation, and selection. The image below shows a detailed version of robot creation.

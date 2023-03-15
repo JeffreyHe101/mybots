@@ -18,7 +18,9 @@ ROBOT CREATION
 
 ![My Image](create_brain_body_diagram.png)
 
-ROBOT CREATION DESCRIPTION
+First, the robot parameters are initiated with random number of links between 5-10. Each link has randomized size predetermined along with a 50% chance to be a sensor link. Then, the first 2 links and first joint are created manually, but still random. Next, every iteration a new link and joint gets attached to the previous robot. The code checks for self collision and only allows new links on outside faces. After all the links and joints are created, it gets formed and pyrosim ends.
+
+For the brain, these are generated from mapping sensors to motors. Each sensor has a weight to a motor which can be changed later on to effect movement. 
 
 After creation, each robot undergoes a mutation at each generation shown in the image below.
 
